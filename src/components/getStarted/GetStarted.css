@@ -1,0 +1,44 @@
+.s-wrapper {
+  margin-top: 80px;
+}
+
+.s-container {
+  background-color: #4666ff;
+  border: 6px solid #c9c9c93c;
+  border-radius: 15px;
+  text-align: center;
+}
+@media (max-width: 769px) {
+  .s-container {
+    margin: 0px 50px 0px 50px;
+  }
+}
+@media (max-width: 400px) {
+  .s-container {
+    margin: 0px 15px 0px 15px;
+  }
+}
+.s-container h1 {
+  color: white;
+  margin-top: 30px;
+}
+.s-container .text {
+  font-size: 15px;
+  color: #cfcfcf;
+  margin-top: 20px;
+}
+.s-container button {
+  background-color: #5571ff;
+  padding: 10px 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px white solid;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.s-container button:hover {
+  scale: 1.05;
+  transition: ease 0.5s;
+}

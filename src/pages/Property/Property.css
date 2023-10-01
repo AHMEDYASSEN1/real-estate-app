@@ -1,0 +1,65 @@
+.p-wrapper .image {
+    width: 100%;
+    margin-top: 20px;
+}
+.p-wrapper .image img {
+    width: 100%;
+    border-radius: 15px;
+}
+.p-wrapper .details {
+    margin-top: 20px;
+}
+.p-wrapper .details .info .title {
+    display: flex;
+    justify-content: space-between;
+}
+.p-wrapper .details .info .title h2{
+    color: #1f3e72;
+}
+.p-wrapper .details .info .title span {
+    color: orange;
+    font-size: 25px;
+    font-weight: 600;
+    min-width: 100px;
+}
+.p-wrapper .details .info .comp {
+    margin-top: 20px;
+}
+.p-wrapper .details .info .comp span {
+    padding-right: 35px;
+}
+@media (max-width: 392px) {
+    .p-wrapper .details .info .comp span {
+        display: block;
+        margin-top: 6px;
+    }
+}
+.p-wrapper .details .info .comp span svg {
+    font-size: 18px;
+    margin-right: 5px;
+}
+.p-wrapper .details .info .text {
+    font-size: 15px;
+    color: #bababa;
+    margin-top: 20px;
+}
+.p-wrapper .details .info .location {
+    font-size: 15px;
+    color: #bababa;
+    margin-top: 20px;
+}
+.p-wrapper .details .info button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1f3e72;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.p-wrapper .details .p-map {
+
+}

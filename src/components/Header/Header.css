@@ -1,0 +1,108 @@
+.h-wrapper {
+  background-color: var(--black);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.h-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+.h-container img {
+  width: 115px;
+  height: 40px;
+}
+.h-container .menu a {
+  color: var(--secondary);
+  padding-right: 1.5rem;
+  font-size: 17px;
+  cursor: pointer;
+}
+.h-container .menu button {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #193fff, #7585d1);
+  border-radius: 5px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 15px;
+  padding: 0.6em 1.5em;
+}
+.h-container .menu button:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+.menu-icon {
+  display: none;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+  .h-container .menu {
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    gap: 1.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  }
+  .h-container .menu::before {
+    content: "";
+    height: 0px;
+    width: 0px;
+    border: 8px solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+  }
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 500ms ease;
+  }
+  .hide {
+    /* display: none; */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 500ms ease;
+  }
+  .h-container .menu a {
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .h-container .menu a:hover {
+    background-color: #eeeeff;
+    transition: 200ms;
+  }
+}

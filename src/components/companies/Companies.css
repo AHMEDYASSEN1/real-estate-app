@@ -1,0 +1,18 @@
+.c-container {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c-container img {
+    width: 160px;
+    height: 80px;
+    margin-top: 40px;
+}
+@media (max-width: 769px) {
+    .c-container {
+        flex-direction: column
+    }
+}
