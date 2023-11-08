@@ -9,13 +9,13 @@
   text-align: center;
 }
 @media (max-width: 769px) {
-  .s-container {
-    margin: 0px 50px 0px 50px;
+  .s-wrapper {
+    margin: 20px;
   }
 }
 @media (max-width: 400px) {
-  .s-container {
-    margin: 0px 15px 0px 15px;
+  .s-wrapper {
+    margin: 20px;
   }
 }
 .s-container h1 {
